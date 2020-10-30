@@ -3,9 +3,9 @@
 class CStringUtil
 {
 public:
-  BOOL SplitUrL(CString strURL, CString& strProt, CString& strServer, CString& strPath);
-	CString UrlEncode(CString strValue);
-	CString UrlDecode(CString strValue);
+	void SplitUrL(CString strURL, CString& strProt, CString& strServer, CString& strPath);
+	CStringW UrlEncode(CStringW strValue);
+	CStringW UrlDecode(CStringW strValue);
 protected:
 	int UrlEncode(LPCWSTR lpszSrc, LPWSTR lpszDst);
 	int UrlDecode(LPCWSTR lpszSrc, LPWSTR lpszDst);
